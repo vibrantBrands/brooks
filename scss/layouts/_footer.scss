@@ -1,0 +1,22 @@
+footer {
+	background: $footer-bg;
+	color: $brooks-brown;
+	padding: 60px 0;
+	font-family: $primary-font;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+
+		@include flex-col-layout();
+
+		>div {
+
+			margin-top: 40px;
+		}
+	}
+}

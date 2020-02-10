@@ -1,0 +1,156 @@
+
+
+.brooks {
+
+	.hero {
+		background: url('../img/Hero-Image-BG.png') no-repeat;
+		background-position: 0 -210px;
+		min-height: 100px;
+
+		@media only screen and (max-width: $lg-breakpoint) {
+	    	background-position: 0 -80px;
+	    	min-height: 500px;
+
+	    }
+
+		.container {
+			align-items: flex-start;
+			display: flex;
+			justify-content: space-around;
+			min-height: 100px;
+			padding-top: 80px;
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				align-items: center;
+	    		min-height: 1000px;
+	    	}
+
+			@include flex-col-layout();
+
+			>div {
+				position: relative;
+			}
+
+			button {
+				top: 50px;
+				left: 150px;
+				position: absolute;
+				z-index: 2;
+
+				@media only screen and (max-width: $lg-breakpoint) {
+					left: 0;
+	    			position: relative;
+	    			top: -90px;
+	    		}
+			}
+
+			.bam {
+				left: 80px;
+				max-width: 380px;
+	    		position: absolute;
+	    		top: -20px;
+	    		z-index: 1;
+
+
+	    		@media only screen and (max-width: $lg-breakpoint) {
+	    			display: none;
+	    		}
+	    	}
+	    	.sauces {
+	    		margin-top: 160px;
+	    		position: relative;
+	    		z-index: 3;
+
+	    		@media only screen and (max-width: $lg-breakpoint) {
+	    			margin-top: 0px;
+	    		}
+	    	}
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				height: 700px;
+				margin-top: 0px;
+				padding-top: 0px;
+
+				img {
+					height: auto;
+					margin: 0;
+				}
+
+				.logo {
+					width: 60%;
+				}
+			}
+
+			.inner {
+				display: flex;
+
+				@media only screen and (max-width: $lg-breakpoint) {
+					flex-direction: column;
+				}
+			}
+		}
+	}
+
+	.description {
+		margin-top: 0;
+
+		p {
+			padding: 0 50px;
+		}
+	}
+
+	.flavors {
+        background: url('../img/Barn-Board-BG.png') no-repeat;
+        background-position: 0 -100px;
+        min-height: 500px;
+        padding-top: 50px;
+
+        .container {
+        	a {
+        		display: block;
+        	}
+
+            button {
+                margin: 10px auto 60px;
+            }
+
+            h1 {
+                color: $white;
+                text-shadow: 2px 2px 4px #000000;
+            }
+        }
+
+        .sauces {
+
+        	@media only screen and (max-width: $lg-breakpoint) {
+				margin-top: 80px;
+				width: 90%;
+        	}
+        }
+    }
+
+	.social {
+
+        h1 {
+            text-transform: capitalize;
+        }
+
+        .container {
+             display: flex;
+             justify-content: space-between;
+
+             @include flex-col-layout();
+
+             img {
+                margin: 10px;
+                width: 290px;
+                height: auto;
+
+                @media only screen and (max-width: $lg-breakpoint) {
+					margin-top: 20px;
+					width: 90%;
+				}
+             }
+        }
+    }
+}

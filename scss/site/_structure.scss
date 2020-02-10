@@ -1,0 +1,54 @@
+
+
+.brooks {
+    font-family: $primary-font;
+    text-align: center;
+
+    button {
+        background: $brooks-yellow;
+        border-radius: 0;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        color: $brooks-brown;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 15px 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all .3s ease-out;
+
+        .fa {
+            margin-left: 5px;
+        }
+
+        &:hover {
+            background: $button-hover;
+            color: $white;
+        }
+    }
+
+    h1 {
+        font-size: $h1-size;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: $text-size;
+        line-height: 25px;
+        margin: 0 auto;
+
+        @media only screen and (max-width: $lg-breakpoint) {
+            width: 90%;
+        }
+    }
+
+    .container {
+        margin: 0 auto;
+        max-width: $content-max-width;
+    }
+
+    section {
+        margin: 60px 0;
+    }
+}
