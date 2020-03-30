@@ -958,7 +958,7 @@ textarea {
 .brooks {
   font-family: "Raleway", sans-serif;
   text-align: center; }
-  .brooks button {
+  .brooks .btn-yellow {
     background: #ffb814;
     border-radius: 0;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -971,9 +971,9 @@ textarea {
     text-decoration: none;
     text-transform: uppercase;
     transition: all .3s ease-out; }
-    .brooks button .fa {
+    .brooks .btn-yellow .fa {
       margin-left: 5px; }
-    .brooks button:hover {
+    .brooks .btn-yellow:hover {
       background: #f99500;
       color: #ffffff; }
   .brooks h1 {
@@ -995,12 +995,12 @@ textarea {
 
 .brooks .hero {
   background: url("../img/Hero-Image-BG.png") no-repeat;
-  background-position: 0 -210px;
+  background-position: 0 -300px;
   min-height: 100px; }
   @media only screen and (max-width: 992px) {
     .brooks .hero {
-      background-position: 0 -80px;
-      min-height: 500px; } }
+      background-position: 0 -280px;
+      min-height: 300px; } }
   .brooks .hero .container {
     align-items: flex-start;
     display: flex;
@@ -1010,26 +1010,27 @@ textarea {
     @media only screen and (max-width: 992px) {
       .brooks .hero .container {
         align-items: center;
-        min-height: 1000px; } }
+        min-height: 600px; }
+        .brooks .hero .container > div {
+          margin-top: 50px; } }
     @media screen and (max-width: 992px) {
       .brooks .hero .container {
         flex-direction: column; } }
     .brooks .hero .container > div {
       position: relative; }
-    .brooks .hero .container button {
-      top: 50px;
-      left: 150px;
+    .brooks .hero .container .btn-yellow {
+      top: 65px;
+      left: 70px;
       position: absolute;
       z-index: 2; }
       @media only screen and (max-width: 992px) {
-        .brooks .hero .container button {
+        .brooks .hero .container .btn-yellow {
           left: 0;
           position: relative;
-          top: -90px; } }
+          top: 0px; } }
     .brooks .hero .container .bam {
       left: 80px;
       max-width: 380px;
-      position: absolute;
       top: -20px;
       z-index: 1; }
       @media only screen and (max-width: 992px) {
@@ -1041,22 +1042,31 @@ textarea {
       z-index: 3; }
       @media only screen and (max-width: 992px) {
         .brooks .hero .container .sauces {
-          margin-top: 0px; } }
+          margin: -50px auto;
+          width: 80%; } }
     @media only screen and (max-width: 992px) {
       .brooks .hero .container {
-        height: 700px;
         margin-top: 0px;
         padding-top: 0px; }
         .brooks .hero .container img {
           height: auto;
           margin: 0; }
         .brooks .hero .container .logo {
-          width: 60%; } }
+          width: 200px; } }
     .brooks .hero .container .inner {
-      display: flex; }
+      display: flex;
+      flex-direction: column; }
       @media only screen and (max-width: 992px) {
         .brooks .hero .container .inner {
           flex-direction: column; } }
+    .brooks .hero .container .slider-wrapper {
+      margin-top: 0px;
+      padding-left: 50px;
+      width: 600px; }
+      .brooks .hero .container .slider-wrapper .sauce-slider {
+        width: 90%; }
+        .brooks .hero .container .slider-wrapper .sauce-slider img {
+          width: 100%; }
 
 .brooks .description {
   margin-top: 0; }
@@ -1078,7 +1088,7 @@ textarea {
   @media only screen and (max-width: 992px) {
     .brooks .flavors .sauces {
       margin-top: 80px;
-      width: 90%; } }
+      width: 300px; } }
 
 .brooks .social h1 {
   text-transform: capitalize; }

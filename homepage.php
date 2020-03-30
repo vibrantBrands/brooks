@@ -6,9 +6,15 @@
 			<img src="<?php echo $this->getThemePath(); ?>/img/Oneonta-51-hero-overlay.png" alt="Oneonta 51" class="logo">
 		</div>
 		<div class="inner">
-			<img src="<?php echo $this->getThemePath(); ?>/img/BAM-graphic.svg" alt="Boom Symbol" class="bam">
-			<a href="https://brooks-bbq.myshopify.com/"><button>Try the Sauce</button></a>
-			<img src="<?php echo $this->getThemePath(); ?>/img/sauce-hero-overlay.png" alt="Oneonta 51 Sauces" class="sauces">
+			<img src="<?php echo $this->getThemePath(); ?>/img/BAM-graphic.svg" alt="Boom Symbol" class="bam" />
+			<a href="https://brooks-bbq.myshopify.com/"><button class="btn-yellow">Try the Sauce</button></a>
+			<div class="slider-wrapper">
+				<div class="sauce-slider">
+					<img src="<?php echo $this->getThemePath(); ?>/img/sauce-hero-overlay.png" alt="Oneonta 51 Sauces" />
+					<img src="<?php echo $this->getThemePath(); ?>/img/sauce-hero-overlay-2.png" alt="Oneonta 51 Sauces"  />
+					<img src="<?php echo $this->getThemePath(); ?>/img/rub-hero-overlay-1.png" alt="Oneonta 51 Sauces" />
+				</div>	
+			</div>
 		</div>
 	</div>
 </div>
@@ -20,9 +26,9 @@
 </section>
 <section class="flavors">
 	<div class="container">
-		<h1>Limited Edition Wing Flavors</h1>
-		<a href="https://brooks-bbq.myshopify.com/"><button>Sauce it Up!</button></a>
-		<img src="<?php echo $this->getThemePath(); ?>/img/Wing-Sauces.png" alt="Oneonta 51 Sauces" class="sauces">
+		<h1>Makes a Great Gift</h1>
+		<a href="https://brooks-bbq.myshopify.com/"><button class="btn-yellow">Sauce it Up!</button></a>
+		<img src="<?php echo $this->getThemePath(); ?>/img/Sauce-box.png" alt="Oneonta 51 Sauce Box" class="sauces">
 	</div>
 </section>
 <section class="video">

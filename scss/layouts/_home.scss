@@ -4,12 +4,12 @@
 
 	.hero {
 		background: url('../img/Hero-Image-BG.png') no-repeat;
-		background-position: 0 -210px;
+		background-position: 0 -300px;
 		min-height: 100px;
 
 		@media only screen and (max-width: $lg-breakpoint) {
-	    	background-position: 0 -80px;
-	    	min-height: 500px;
+	    	background-position: 0 -280px;
+	    	min-height: 300px;
 
 	    }
 
@@ -22,7 +22,11 @@
 
 			@media only screen and (max-width: $lg-breakpoint) {
 				align-items: center;
-	    		min-height: 1000px;
+	    		min-height: 600px;
+
+	    		>div {
+	    			margin-top: 50px;
+	    		}
 	    	}
 
 			@include flex-col-layout();
@@ -31,23 +35,23 @@
 				position: relative;
 			}
 
-			button {
-				top: 50px;
-				left: 150px;
+			.btn-yellow {
+				top: 65px;
+				left: 70px;
 				position: absolute;
 				z-index: 2;
 
 				@media only screen and (max-width: $lg-breakpoint) {
 					left: 0;
 	    			position: relative;
-	    			top: -90px;
+	    			top: 0px;
 	    		}
 			}
 
 			.bam {
 				left: 80px;
 				max-width: 380px;
-	    		position: absolute;
+	    		//position: absolute;
 	    		top: -20px;
 	    		z-index: 1;
 
@@ -62,12 +66,13 @@
 	    		z-index: 3;
 
 	    		@media only screen and (max-width: $lg-breakpoint) {
-	    			margin-top: 0px;
+	    			margin: -50px auto;
+	    			width: 80%;
 	    		}
 	    	}
 
 			@media only screen and (max-width: $lg-breakpoint) {
-				height: 700px;
+				//height: 700px;
 				margin-top: 0px;
 				padding-top: 0px;
 
@@ -77,15 +82,34 @@
 				}
 
 				.logo {
-					width: 60%;
+					width: 200px;
 				}
 			}
 
 			.inner {
 				display: flex;
+				flex-direction: column;
 
 				@media only screen and (max-width: $lg-breakpoint) {
 					flex-direction: column;
+				}
+			}
+
+			.slider-wrapper {
+				margin-top: 0px;
+				padding-left: 50px;
+				width: 600px;
+
+				@media only screen and (max-width: $lg-breakpoint) {
+					//padding-top: 50px;
+				}
+
+				.sauce-slider {
+					width: 90%;
+
+					img {
+						width: 100%;
+					}
 				}
 			}
 		}
@@ -124,7 +148,7 @@
 
         	@media only screen and (max-width: $lg-breakpoint) {
 				margin-top: 80px;
-				width: 90%;
+				width: 300px;
         	}
         }
     }

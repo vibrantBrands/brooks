@@ -1,10 +1,15 @@
 $( document ).ready(function() {
 
-	$('.menu-toggle').click(function(){
-		$(this).toggleClass('active');
-		$(this).toggleClass('inactive');
-		$('.nav').toggleClass('active');
-		$('.nav').toggleClass('inactive');
-	});
+	$('.sauce-slider').slick({
+        autoplay: true,
+        arrows: true,
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+  		slidesToScroll: 1,
+  		cssEase: "ease",
+  		autoplaySpeed: 4000,
+  		pauseOnFocus: false,
+    });
 
 });
