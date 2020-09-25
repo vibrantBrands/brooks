@@ -1058,11 +1058,14 @@ textarea {
       flex-direction: column; }
       @media only screen and (max-width: 992px) {
         .brooks .hero .container .inner {
-          flex-direction: column; } }
+          flex-direction: column;
+          width: 100%; } }
     .brooks .hero .container .slider-wrapper {
-      margin-top: 0px;
-      padding-left: 50px;
-      width: 600px; }
+      margin-top: 40px;
+      padding-left: 50px; }
+      @media only screen and (min-width: 992px) {
+        .brooks .hero .container .slider-wrapper {
+          width: 600px; } }
       .brooks .hero .container .slider-wrapper .sauce-slider {
         width: 90%; }
         .brooks .hero .container .slider-wrapper .sauce-slider img {
@@ -1087,8 +1090,7 @@ textarea {
     text-shadow: 2px 2px 4px #000000; }
   @media only screen and (max-width: 992px) {
     .brooks .flavors .sauces {
-      margin-top: 80px;
-      width: 300px; } }
+      margin-top: 80px; } }
 
 .brooks .social h1 {
   text-transform: capitalize; }
@@ -1123,6 +1125,9 @@ footer {
     @media screen and (max-width: 992px) {
       footer .container {
         flex-direction: column; } }
+    footer .container a {
+      color: #341906;
+      text-decoration: none; }
     footer .container > div {
       margin-top: 40px; }
 

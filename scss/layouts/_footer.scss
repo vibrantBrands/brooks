@@ -14,8 +14,12 @@ footer {
 
 		@include flex-col-layout();
 
-		>div {
+		a {
+			color: $brooks-brown;
+			text-decoration: none;
+		}
 
+		>div {
 			margin-top: 40px;
 		}
 	}

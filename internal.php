@@ -16,10 +16,10 @@
            <section class="hero">  
        <?php endif; ?>
 
-		<div class="hero-text">
+		<!-- <div class="hero-text">
 			<p>Bridging the Gap</p>
 			<p><span>Supporting our Albany Police Officers and Firefighters</span></p>
-		</div>
+		</div> -->
 		<a class="btn" href="/about">Learn More<i class="fa fa-chevron-right"></i></a>
 		<div class="support-text">SUPPORT APFF<a class="btn" href="/donate">DONATE<i class="fa fa-chevron-right"></i></a></div>
 	</section>

@@ -10,9 +10,11 @@
 			<a href="https://brooks-bbq.myshopify.com/"><button class="btn-yellow">Try the Sauce</button></a>
 			<div class="slider-wrapper">
 				<div class="sauce-slider">
-					<img src="<?php echo $this->getThemePath(); ?>/img/sauce-hero-overlay.png" alt="Oneonta 51 Sauces" />
+					<img src="<?php echo $this->getThemePath(); ?>/img/BBQchick.jpg" alt="Chicken Sauce" />
+					<img src="<?php echo $this->getThemePath(); ?>/img/big-sauces.jpg" alt="Big Sauces" />
 					<img src="<?php echo $this->getThemePath(); ?>/img/sauce-hero-overlay-2.png" alt="Oneonta 51 Sauces"  />
 					<img src="<?php echo $this->getThemePath(); ?>/img/rub-hero-overlay-1.png" alt="Oneonta 51 Sauces" />
+					<img src="<?php echo $this->getThemePath(); ?>/img/hot-coleslaw.png" alt="Oneonta 51 Hot Coleslaw" />
 				</div>	
 			</div>
 		</div>
@@ -20,9 +22,10 @@
 </div>
 <section class="description">
 	<div class="container">
-		<h1>This Sauce is Boss</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-	</div>
+		<?php
+        $a = new Area('Descriptor Text');
+        $a->display($c);
+    ?>  
 </section>
 <section class="flavors">
 	<div class="container">
@@ -33,14 +36,13 @@
 </section>
 <section class="video">
 	<div class="container">
-		<a href="//www.youtube.com/watch?v=bZlGPtJwrYA" data-lity>
+		<a href="//vimeo.com/355968855" data-lity>
 			<img src="<?php echo $this->getThemePath(); ?>/img/video.png" alt="Oneonta 51 Sauces" class="sauces">
 		</a>
 
 	</div>
 </section>
 <section class="social">
-	<h1>@Oneonta51</h1>
 	<div class="container">
 		<div>
 			<img src="<?php echo $this->getThemePath(); ?>/img/IG-post-1.png" alt="Social Image" />

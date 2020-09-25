@@ -92,16 +92,17 @@
 
 				@media only screen and (max-width: $lg-breakpoint) {
 					flex-direction: column;
+					width: 100%;
 				}
 			}
 
 			.slider-wrapper {
-				margin-top: 0px;
+				margin-top: 40px;
 				padding-left: 50px;
-				width: 600px;
+				
 
-				@media only screen and (max-width: $lg-breakpoint) {
-					//padding-top: 50px;
+				@media only screen and (min-width: $lg-breakpoint) {
+					width: 600px;
 				}
 
 				.sauce-slider {
@@ -148,7 +149,7 @@
 
         	@media only screen and (max-width: $lg-breakpoint) {
 				margin-top: 80px;
-				width: 300px;
+				//width: 300px;
         	}
         }
     }
